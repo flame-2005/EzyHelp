@@ -1,5 +1,5 @@
 // pages/api/user.js
-import connectDb from '../../utils/db';
+import connectDb from '../../utils/dbConnect';
 import User from '../../models/User';
 import jwt from 'jsonwebtoken';
 
