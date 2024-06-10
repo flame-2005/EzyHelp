@@ -80,12 +80,12 @@ export default function Home() {
       <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center ">
         {/* <!--Left Col--> */}
         <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-          <p className="uppercase tracking-loose w-full">What business are you?</p>
+          <p className="uppercase tracking-loose w-full">What we do?</p>
           <h1 className="my-4 text-5xl font-bold leading-tight">
-            Main Hero Message to sell yourself!
+          Transforming Trades, Empowering Home
           </h1>
           <p className="leading-normal text-2xl mb-8">
-            Sub-hero message, not too long and not too short. Make it just right!
+          Discover EzyHelp, where skilled craftsmanship meets seamless service for your every home improvement need.
           </p>
           <motion.button
                 whileHover={{ scale: 1.1 }}
@@ -781,8 +781,7 @@ export default function Home() {
         </div>
     </section>
     </div>
-    
-<Review/>
+
 <FaqSection/>
 <Gallery/>
     </>
