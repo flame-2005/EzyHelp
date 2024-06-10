@@ -710,7 +710,7 @@ export default function Home() {
                                             <img className="object-cover w-full h-full transition-all "
                                                 src="https://res.cloudinary.com/dtyombve3/image/upload/v1717845212/wl5rql02tnwncmpibvkd.png" alt="" />
                                         </div>
-                                        <h2 className="mb-2 text-xl font-semibold text-gray-800 ">Solution in not time</h2>
+                                        <h2 className="mb-2 text-xl font-semibold text-gray-800 ">Solution in no time</h2>
                                         {/* <span
                                             className="inline-block mb-6 text-base font-medium text-blue-500 ">MBBS
                                         </span> */}

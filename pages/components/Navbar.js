@@ -7,7 +7,8 @@ import { FaOpencart } from "react-icons/fa6";
 import { MdAddCall } from "react-icons/md";
 import { motion } from 'framer-motion';
 import { useSelector, useDispatch } from 'react-redux'
-import { decrement, increment} from '../../redux/counter/counterSlice'
+import { FaQ } from "react-icons/fa6";
+import { SlPicture } from "react-icons/sl";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -51,13 +52,13 @@ const Navbar = () => {
 
   return (
     <section className={`bg-transparent bg-blend-overlay z-40 font-poppins w-full sticky top-0z-20 navbar ${isVisible ? 'visible' : ''}`}>
-      <div className=" md:px-6 py-1 bg-transparent mx-auto "
+      <div className=" md:px-6 py-1 bg-transparent mx-auto border-b-2 border-black"
         x-data="{open:false}">
         <div className="relative bg-transparent  flex  py-2"
         >
           <Link href={'/'}>
           
-           <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718014519/bghejb2qjdoo7zievrql.png" alt="" className='h-20 rounded-full' />
+           <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718014519/bghejb2qjdoo7zievrql.png" alt="" className='h-10 rounded-full' />
           </Link>
           {/* <Example/> */}
 
@@ -111,6 +112,26 @@ const Navbar = () => {
                 whileTap={{ scale: 0.9 }}
               > <Link href="/role/Role" className=" mx-5 md:mx-0 text-3xl font-bold hover:bg-White rounded-full text-black hover:px-2 transition-all">
                   <LuUser2 />
+                </Link>
+              </motion.button>
+
+            </li>
+            <li>
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              > <Link href="/#faq" className=" mx-5 md:mx-0 text-3xl font-bold hover:bg-White rounded-full text-black hover:px-2 transition-all">
+                  <FaQ />
+                </Link>
+              </motion.button>
+
+            </li>
+            <li>
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              > <Link href="/#gallery" className=" mx-5 md:mx-0 text-3xl font-bold hover:bg-White rounded-full text-black hover:px-2 transition-all">
+                  <SlPicture />
                 </Link>
               </motion.button>
 

@@ -53,7 +53,7 @@ const FaqSection = () => {
       });
 
     return (
-        <section ref={ref} className={`ont-poppins ${inView ? 'animate__animated animate__bounceInUp fade-in' : 'fade-out'} `}>
+        <section ref={ref} id='faq' className={`ont-poppins ${inView ? 'animate__animated animate__bounceInUp fade-in' : 'fade-out'} `}>
             <div className="py-24 mb-10 lg:block">
                 <div className="max-w-4xl mx-auto mb-14">
                     <h1 className="mb-4 text-3xl font-bold text-center text-black">FAQs - Frequently Asked Questions</h1>
