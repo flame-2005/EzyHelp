@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: -80px; /* initially hidden */
+    width: 100%;
+    transition: top 0.3s;
+  }
+  
+  .navbar.visible {
+    top: 0;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .active {
+    background:white
+  }
+
+    
+  .swiper1 {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide1 {
+    text-align: center;
+    font-size: 18px;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide1 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .popup-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(0);
+    transition: transform 0.1s ease-out;
+    z-index: 10;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  .popup-content.open {
+    transform: scale(1);
+  }
+  
+  .popup-content.close {
+    transform: scale(0);
+  }
+  /* For Webkit browsers (Chrome, Safari, Edge) */
+/* Global Styles for Webkit Browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px; /* Adjust scrollbar width */
+  height: 12px; /* Adjust scrollbar height if horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Remove scrollbar track background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: black; /* Vertical linear gradient */
+  border-radius: 10px; /* Roundness of the scrollbar thumb */
+  border: 3px solid transparent; /* Add space around the thumb */
+  background-clip: content-box; /* Clip the background to show the border */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: black; /* Gradient on hover */
+}
+
+/* Global Styles for Firefox */
+html {
+  scrollbar-width: thin; /* Adjust scrollbar width */
+  scrollbar-color: black transparent; /* Color of the scrollbar thumb and track */
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate__slideInLeft {
+  animation: slideInLeft 1s forwards; /* Adjust animation duration as needed */
+}
+
+  
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotate(0deg); /* Set the initial rotation */
+    }
+    100% {
+      transform: rotate(360deg); /* Set the final rotation */
+    }
+  }
+  
+
+  /* Example with animate.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+/* Example with custom keyframes */
+@keyframes bounceInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate__bounceInUp {
+  animation: bounceInUp 1s forwards; /* Adjust animation duration as needed */
+}
+/* styles.css or your global CSS file */
+.fade-in {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+/* styles.css or your global CSS file */
+.slide-in-right {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.slide-out-right {
+  opacity: 0;
+  transform: translateX(80%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+} 
+.slide-in-left {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.slide-out-left {
+  opacity: 0;
+  transform: translateX(-80%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+  
