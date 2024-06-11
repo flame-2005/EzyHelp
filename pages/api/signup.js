@@ -35,9 +35,9 @@ export default async function handler(req, res) {
         await user.save();
 
         // Send welcome email
-        const subject = 'Account Created Successfully';
-        const text = `Hi ${name},\n\nYour account has been created successfully.\n\nThank you for signing up!`;
-        await sendEmail(email, subject, text);
+        // const subject = 'Account Created Successfully';
+        // const text = `Hi ${name},\n\nYour account has been created successfully.\n\nThank you for signing up!`;
+        // await sendEmail(email, subject, text);
 
         // Return jsonwebtoken (optional: for session management)
         const payload = {

@@ -50,7 +50,7 @@ const FaqSection = () => {
     const { ref, inView } = useInView({
         triggerOnce: true, // Trigger animation once
         threshold: 0.2, // Trigger when 50% of section is in view
-      });
+    });
 
     return (
         <section ref={ref} id='faq' className={`ont-poppins ${inView ? 'animate__animated animate__bounceInUp fade-in' : 'fade-out'} `}>
@@ -58,12 +58,13 @@ const FaqSection = () => {
                 <div className="max-w-4xl mx-auto mb-14">
                     <h1 className="mb-4 text-3xl font-bold text-center text-black">FAQs - Frequently Asked Questions</h1>
                     <p className="text-center mb-7 mx-auto text-gray-500">
-                        Changepay serves as the pivotal technological solution revolutionizing campus commerce, offering a seamless transition to a digital platform that enhances convenience and adaptability for students, sellers, and the entire campus community.
+
+                        EzyHelp is your go-to technological solution revolutionizing home services, providing a seamless digital platform that enhances convenience and reliability for homeowners, skilled workers, and the entire community.
                     </p>
                 </div>
             </div>
 
-            <div  className={`max-w-4xl mx-auto `}>
+            <div className={`max-w-4xl mx-auto `}>
                 <div className="w-full p-4 py-0 rounded-md shadow-lg -mt-36 lg:full ">
                     <div className="flex-1">
                         {faqData.map((faq, index) => (
