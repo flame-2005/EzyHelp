@@ -51,7 +51,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <section className={`bg-transparent bg-blend-overlay z-40 font-poppins w-full sticky top-0z-20 navbar ${isVisible ? 'visible' : ''}`}>
+    <section className={`bg-white shadow-md bg-blend-overlay z-40 font-poppins w-full sticky top-0z-20 navbar ${isVisible ? 'visible' : ''}`}>
       <div className=" md:px-6 py-1 bg-transparent mx-auto border-b-2 border-black"
         x-data="{open:false}">
         <div className="relative bg-transparent  flex  py-2"

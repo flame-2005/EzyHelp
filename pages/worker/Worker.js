@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 const Worker = () => {
   const [fullName, setFullName] = useState('');
   const [currentAddress, setCurrentAddress] = useState('');
+  const [district, setDistrict] = useState('');
+  const [state, setState] = useState('');
   const [mobileNo, setMobileNo] = useState('');
   const [workCategory, setWorkCategory] = useState('');
   const [email, setEmail] = useState('');
@@ -14,6 +16,8 @@ const Worker = () => {
     const formData = {
       fullName,
       currentAddress,
+      district,
+      state,
       mobileNo,
       workCategory,
       email,
@@ -37,9 +41,11 @@ const Worker = () => {
       console.log(result);
 
       if (response.ok) {
-        alert('Worker signed up successfully!');
+        alert('Worker signed up successfully! our team will get in touch with you very soon');
         setFullName('');
         setCurrentAddress('');
+        setDistrict('');
+        setState('');
         setMobileNo('');
         setWorkCategory('');
         setEmail('');
@@ -78,6 +84,7 @@ const Worker = () => {
                   type="text"
                   id="full-name"
                   name="fullName"
+                  required='true'
                   value={fullName}
                   onChange={(e) => setFullName(e.target.value)}
                   className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -89,6 +96,7 @@ const Worker = () => {
                   type="text"
                   id="current-address"
                   name="currentAddress"
+                  required='true'
                   value={currentAddress}
                   onChange={(e) => setCurrentAddress(e.target.value)}
                   className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -100,6 +108,9 @@ const Worker = () => {
                   type="text"
                   id="state"
                   name="state"
+                  required='true'
+                  value={state}
+                  onChange={(e) => setState(e.target.value)}
                   className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
@@ -109,6 +120,9 @@ const Worker = () => {
                   type="text"
                   id="district"
                   name="district"
+                  required='true'
+                  value={district}
+                  onChange={(e) => setDistrict(e.target.value)}
                   className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
@@ -118,6 +132,7 @@ const Worker = () => {
                   type="text"
                   id="mobile-no"
                   name="mobileNo"
+                  required='true'
                   value={mobileNo}
                   onChange={(e) => setMobileNo(e.target.value)}
                   className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -128,6 +143,7 @@ const Worker = () => {
                 <select
                   id="work-category"
                   name="workCategory"
+                  required='true'
                   value={workCategory}
                   onChange={(e) => setWorkCategory(e.target.value)}
                   className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -141,6 +157,7 @@ const Worker = () => {
               <div className="relative mb-4">
                 <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
                 <input
+                
                   type="email"
                   id="email"
                   name="email"
