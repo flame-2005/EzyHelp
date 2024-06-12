@@ -13,7 +13,7 @@ const Role = () => {
         <div className="rounded-lg h-64 overflow-hidden">
           <img alt="content" className="object-cover object-center h-full w-full rounded-full" src="https://res.cloudinary.com/dtyombve3/image/upload/v1717670648/xcumbeg4x4mpsngw7zbl.jpg"/>
         </div>
-        <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Hire Worler</h2>
+        <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Hire Worker</h2>
        
         <motion.button
                 whileHover={{ scale: 1.1 }}

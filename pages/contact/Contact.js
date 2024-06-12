@@ -78,9 +78,9 @@ const Contact = () => {
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
                 <a className="text-indigo-500 leading-relaxed">Areebuddin@ezyhelp.in</a>
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
-                <p className="leading-relaxed">+91 93536 42997</p>
-                <br />
                 <p className="leading-relaxed">+91 96328 79746</p>
+                <br />
+                <p className="leading-relaxed">+91 93536 42997</p>
               </div>
             </div>
           </div>
