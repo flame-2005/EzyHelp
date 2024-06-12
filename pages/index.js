@@ -233,7 +233,7 @@ export default function Home() {
           </g>
         </svg>
       </div>
-      <section ref={firstSectionRef} className={`text-gray-600 body-font ${firstSectionInView ? 'animate__animated animate__bounceInUp fade-in' : 'fade-out'}`} id='tech'>
+      <section className={`text-gray-600 body-font`} id='tech'>
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center font-bold mb-10">
             <p className="inline-block text-4xl text-black">Service</p>
