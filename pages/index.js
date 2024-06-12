@@ -19,6 +19,26 @@ export default function Home() {
   const [shouldRender1, setShouldRender1] = useState(false);
   const [isPopupOpen2, setIsPopupOpen2] = useState(false);
   const [shouldRender2, setShouldRender2] = useState(false);
+  const [isPopupOpen3, setIsPopupOpen3] = useState(false);
+  const [shouldRender3, setShouldRender3] = useState(false);
+  const [isPopupOpen4, setIsPopupOpen4] = useState(false);
+  const [shouldRender4, setShouldRender4] = useState(false);
+  const [isPopupOpen5, setIsPopupOpen5] = useState(false);
+  const [shouldRender5, setShouldRender5] = useState(false);
+  const [isPopupOpen6, setIsPopupOpen6] = useState(false);
+  const [shouldRender6, setShouldRender6] = useState(false);
+  const [isPopupOpen7, setIsPopupOpen7] = useState(false);
+  const [shouldRender7, setShouldRender7] = useState(false);
+  const [isPopupOpen8, setIsPopupOpen8] = useState(false);
+  const [shouldRender8, setShouldRender8] = useState(false);
+  const [isPopupOpen9, setIsPopupOpen9] = useState(false);
+  const [shouldRender9, setShouldRender9] = useState(false);
+  const [isPopupOpen10, setIsPopupOpen10] = useState(false);
+  const [shouldRender10, setShouldRender10] = useState(false);
+  const [isPopupOpen11, setIsPopupOpen11] = useState(false);
+  const [shouldRender11, setShouldRender11] = useState(false);
+  const [isPopupOpen12, setIsPopupOpen12] = useState(false);
+  const [shouldRender12, setShouldRender12] = useState(false);
 
 
 
@@ -66,6 +86,96 @@ export default function Home() {
     } else {
       setShouldRender1(true);
       setTimeout(() => setIsPopupOpen1(true), 0);
+    }
+  };
+  const togglePopup4Mechanic = () => {
+    if (isPopupOpen3) {
+      setIsPopupOpen3(false);
+      setTimeout(() => setShouldRender3(false), 100); // Delay removal for animation
+    } else {
+      setShouldRender3(true);
+      setTimeout(() => setIsPopupOpen3(true), 0);
+    }
+  };
+  const togglePopup2Mechanic = () => {
+    if (isPopupOpen4) {
+      setIsPopupOpen4(false);
+      setTimeout(() => setShouldRender4(false), 100); // Delay removal for animation
+    } else {
+      setShouldRender4(true);
+      setTimeout(() => setIsPopupOpen4(true), 0);
+    }
+  };
+  const togglePopupBeautician = () => {
+    if (isPopupOpen5) {
+      setIsPopupOpen5(false);
+      setTimeout(() => setShouldRender5(false), 100); // Delay removal for animation
+    } else {
+      setShouldRender5(true);
+      setTimeout(() => setIsPopupOpen5(true), 0);
+    }
+  };
+  const togglePopupBlackSmith = () => {
+    if (isPopupOpen6) {
+      setIsPopupOpen6(false);
+      setTimeout(() => setShouldRender6(false), 100); // Delay removal for animation
+    } else {
+      setShouldRender6(true);
+      setTimeout(() => setIsPopupOpen6(true), 0);
+    }
+  };
+  const togglePopupCableTV = () => {
+    if (isPopupOpen7) {
+      setIsPopupOpen7(false);
+      setTimeout(() => setShouldRender7(false), 100); // Delay removal for animation
+    } else {
+      setShouldRender7(true);
+      setTimeout(() => setIsPopupOpen7(true), 0);
+    }
+  };
+  const togglePopupGlasswaremanufacturing = () => {
+    if (isPopupOpen8) {
+      setIsPopupOpen8(false);
+      setTimeout(() => setShouldRender8(false), 100); // Delay removal for animation
+    } else {
+      setShouldRender8(true);
+      setTimeout(() => setIsPopupOpen8(true), 0);
+    }
+  };
+  const togglePopupAutoservice = () => {
+    if (isPopupOpen9) {
+      setIsPopupOpen9(false);
+      setTimeout(() => setShouldRender9(false), 100); // Delay removal for animation
+    } else {
+      setShouldRender9(true);
+      setTimeout(() => setIsPopupOpen9(true), 0);
+    }
+  };
+  const togglePopupHousemaid  = () => {
+    if (isPopupOpen10) {
+      setIsPopupOpen10(false);
+      setTimeout(() => setShouldRender10(false), 100); // Delay removal for animation
+    } else {
+      setShouldRender10(true);
+      setTimeout(() => setIsPopupOpen10(true), 0);
+    }
+  };
+  const togglePopupLaundrywork = () => {
+    if (isPopupOpen11) {
+      setIsPopupOpen11(false);
+      setTimeout(() => setShouldRender11(false), 100); // Delay removal for animation
+    } else {
+      setShouldRender11(true);
+      setTimeout(() => setIsPopupOpen11(true), 0);
+    }
+  };
+  const togglePopupReceptionist = () => {
+    if (isPopupOpen12) {
+      setIsPopupOpen12(false);
+      setTimeout(() => setShouldRender12(false), 100); // Delay removal for animation
+    } else {
+      setShouldRender12(true);
+      setTimeout(() => setIsPopupOpen12(true), 0);
     }
   };
   const togglePopupLabour = () => {
@@ -632,6 +742,1713 @@ export default function Home() {
                       <button
                         className="absolute top-4 right-4 bg-red-500 text-white rounded-full p-2"
                         onClick={togglePopupLabour}
+                      >
+                        <IoMdClose />
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+            <div className="xl:w-1/3 md:w-1/2 p-4">
+              <div className="p-6 rounded-lg">
+                <div className="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
+                  <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718173767/osnxdnxzqdqqilg6jebn.png" className="h-20" alt="" />
+                </div>
+                <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">4 Wheeler mechanic</h2>
+                <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+              </div>
+              <div className="flex justify-center">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  onClick={togglePopup4Mechanic}
+                ><div
+                  className="inline-flex ml-5 bg-black text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
+
+                >
+                    Book Now
+                  </div>
+                </motion.button>
+
+
+                {shouldRender3 && (
+                  <div className="fixed inset-0 flex items-center justify-center z-50">
+                    <div className="absolute inset-0 bg-black opacity-50"></div>
+                    <div className={`popup-content ${isPopupOpen3 ? 'open' : 'close'}`}>
+                      <section className="text-gray-600 body-font overflow-hidden">
+                        <div className="container px-5 py-8 mx-auto">
+                          <div className="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img
+                              alt="ecommerce"
+                              className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                              src="https://res.cloudinary.com/dtyombve3/image/upload/v1718173778/aomhs5pyhdeg13io0hn9.jpg"
+                            />
+                            <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 className="text-sm title-font text-gray-500 tracking-widest">EzyHelp</h2>
+                              <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">4 Wheeler Mechanic</h1>
+                              <div className="flex mb-4">
+                                <span className="flex items-center">
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <span className="text-gray-600 ml-3">4 Reviews</span>
+                                </span>
+                                <span className="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                  </a>
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                                    </svg>
+                                  </a>
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                                    </svg>
+                                  </a>
+                                </span>
+                              </div>
+                              <p className="leading-relaxed">
+                              At EzyHelp, our four-wheeler mechanics are dependable and skilled professionals ready to assist with a variety of vehicle maintenance and repair tasks. Each mechanic is carefully selected and trained to meet our high standards of reliability and expertise. With EzyHelp, you can be confident that our mechanics will provide the quality service and technical proficiency you need to keep your vehicle running smoothly, on time, and with the utmost professionalism.
+                              </p>
+
+                              <div className="">
+                                <span className="title-font font-medium text-2xl text-gray-900">₹ 99</span>
+                                <motion.button
+                                  whileHover={{ scale: 1.1 }}
+                                  whileTap={{ scale: 0.9 }}
+                                ><Link
+                                  href={'/payment/Payment'}
+                                  className="inline-flex bg-black text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
+
+                                >
+                                    Hire
+                                  </Link>
+                                </motion.button>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <button
+                        className="absolute top-4 right-4 bg-red-500 text-white rounded-full p-2"
+                        onClick={togglePopup4Mechanic}
+                      >
+                        <IoMdClose />
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+            <div className="xl:w-1/3 md:w-1/2 p-4">
+              <div className="p-6 rounded-lg">
+                <div className="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
+                  <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718173767/t7vp7dvjvuafgoj3ogrd.png" className="h-20" alt="" />
+                </div>
+                <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">2 wheeler mechanic 
+                </h2>
+                <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+              </div>
+              <div className="flex justify-center">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  onClick={togglePopup2Mechanic}
+                ><div
+                  className="inline-flex ml-5 bg-black text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
+
+                >
+                    Book Now
+                  </div>
+                </motion.button>
+
+
+                {shouldRender4 && (
+                  <div className="fixed inset-0 flex items-center justify-center z-50">
+                    <div className="absolute inset-0 bg-black opacity-50"></div>
+                    <div className={`popup-content ${isPopupOpen4 ? 'open' : 'close'}`}>
+                      <section className="text-gray-600 body-font overflow-hidden">
+                        <div className="container px-5 py-8 mx-auto">
+                          <div className="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img
+                              alt="ecommerce"
+                              className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                              src="https://res.cloudinary.com/dtyombve3/image/upload/v1718173773/cmes0by3cs5y87suvb8z.jpg"
+                            />
+                            <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 className="text-sm title-font text-gray-500 tracking-widest">EzyHelp</h2>
+                              <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">2 wheeler mechanic</h1>
+                              <div className="flex mb-4">
+                                <span className="flex items-center">
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <span className="text-gray-600 ml-3">4 Reviews</span>
+                                </span>
+                                <span className="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                  </a>
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                                    </svg>
+                                  </a>
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                                    </svg>
+                                  </a>
+                                </span>
+                              </div>
+                              <p className="leading-relaxed">
+                              At EzyHelp, our two-wheeler mechanics are dependable and skilled professionals ready to assist with a variety of motorcycle and scooter maintenance and repair tasks. Each mechanic is carefully selected and trained to meet our high standards of reliability and expertise. With EzyHelp, you can be confident that our mechanics will provide the quality service and technical proficiency you need to keep your two-wheeler running smoothly, on time, and with the utmost professionalism.
+                              </p>
+
+                              <div className="">
+                                <span className="title-font font-medium text-2xl text-gray-900">₹ 99</span>
+                                <motion.button
+                                  whileHover={{ scale: 1.1 }}
+                                  whileTap={{ scale: 0.9 }}
+                                ><Link
+                                  href={'/payment/Payment'}
+                                  className="inline-flex bg-black text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
+
+                                >
+                                    Hire
+                                  </Link>
+                                </motion.button>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <button
+                        className="absolute top-4 right-4 bg-red-500 text-white rounded-full p-2"
+                        onClick={togglePopup2Mechanic}
+                      >
+                        <IoMdClose />
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+            <div className="xl:w-1/3 md:w-1/2 p-4">
+              <div className="p-6 rounded-lg">
+                <div className="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
+                  <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718173767/wxvf05p5ppmbm18uuugj.png" className="h-20" alt="" />
+                </div>
+                <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">Beautician 
+                </h2>
+                <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+              </div>
+              <div className="flex justify-center">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  onClick={togglePopupBeautician}
+                ><div
+                  className="inline-flex ml-5 bg-black text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
+
+                >
+                    Book Now
+                  </div>
+                </motion.button>
+
+
+                {shouldRender5 && (
+                  <div className="fixed inset-0 flex items-center justify-center z-50">
+                    <div className="absolute inset-0 bg-black opacity-50"></div>
+                    <div className={`popup-content ${isPopupOpen5 ? 'open' : 'close'}`}>
+                      <section className="text-gray-600 body-font overflow-hidden">
+                        <div className="container px-5 py-8 mx-auto">
+                          <div className="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img
+                              alt="ecommerce"
+                              className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                              src="https://res.cloudinary.com/dtyombve3/image/upload/v1718173774/xwy3cqrcgc6hn2x5btby.jpg"
+                            />
+                            <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 className="text-sm title-font text-gray-500 tracking-widest">EzyHelp
+                              </h2>
+                              <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">Beautician</h1>
+                              <div className="flex mb-4">
+                                <span className="flex items-center">
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <span className="text-gray-600 ml-3">4 Reviews</span>
+                                </span>
+                                <span className="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                  </a>
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                                    </svg>
+                                  </a>
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                                    </svg>
+                                  </a>
+                                </span>
+                              </div>
+                              <p className="leading-relaxed">
+                                
+At EzyHelp, our beauticians are dependable and skilled professionals ready to assist with a variety of beauty and personal care services. Each beautician is carefully selected and trained to meet our high standards of reliability and expertise. With EzyHelp, you can be confident that our beauticians will provide the quality service and attention to detail you need to look and feel your best, on time, and with the utmost professionalism.
+
+
+
+
+
+
+                              </p>
+
+                              <div className="">
+                                <span className="title-font font-medium text-2xl text-gray-900">₹ 99</span>
+                                <motion.button
+                                  whileHover={{ scale: 1.1 }}
+                                  whileTap={{ scale: 0.9 }}
+                                ><Link
+                                  href={'/payment/Payment'}
+                                  className="inline-flex bg-black text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
+
+                                >
+                                    Hire
+                                  </Link>
+                                </motion.button>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <button
+                        className="absolute top-4 right-4 bg-red-500 text-white rounded-full p-2"
+                        onClick={togglePopupBeautician}
+                      >
+                        <IoMdClose />
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+            <div className="xl:w-1/3 md:w-1/2 p-4">
+              <div className="p-6 rounded-lg">
+                <div className="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
+                  <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718173768/dx7ncui6yjjznkosjp4y.png" className="h-20" alt="" />
+                </div>
+                <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">Black Smith</h2>
+                <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+              </div>
+              <div className="flex justify-center">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  onClick={togglePopupBlackSmith}
+                ><div
+                  className="inline-flex ml-5 bg-black text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
+
+                >
+                    Book Now
+                  </div>
+                </motion.button>
+
+
+                {shouldRender6 && (
+                  <div className="fixed inset-0 flex items-center justify-center z-50">
+                    <div className="absolute inset-0 bg-black opacity-50"></div>
+                    <div className={`popup-content ${isPopupOpen6 ? 'open' : 'close'}`}>
+                      <section className="text-gray-600 body-font overflow-hidden">
+                        <div className="container px-5 py-8 mx-auto">
+                          <div className="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img
+                              alt="ecommerce"
+                              className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                              src="https://res.cloudinary.com/dtyombve3/image/upload/v1718173776/zksnblnxs8e745cwspnz.jpg"
+                            />
+                            <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 className="text-sm title-font text-gray-500 tracking-widest">EzyHelp</h2>
+                              <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">Black Smith</h1>
+                              <div className="flex mb-4">
+                                <span className="flex items-center">
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <span className="text-gray-600 ml-3">4 Reviews</span>
+                                </span>
+                                <span className="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                  </a>
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                                    </svg>
+                                  </a>
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                                    </svg>
+                                  </a>
+                                </span>
+                              </div>
+                              <p className="leading-relaxed">
+                              At EzyHelp, our blacksmiths are dependable and skilled professionals ready to assist with a variety of metalworking tasks. Each blacksmith is carefully selected and trained to meet our high standards of reliability and craftsmanship. With EzyHelp, you can be confident that our blacksmiths will provide the quality work and expertise you need to get your metalworking projects done right, on time, and with the utmost professionalism.
+                              </p>
+
+                              <div className="">
+                                <span className="title-font font-medium text-2xl text-gray-900">₹ 99</span>
+                                <motion.button
+                                  whileHover={{ scale: 1.1 }}
+                                  whileTap={{ scale: 0.9 }}
+                                ><Link
+                                  href={'/payment/Payment'}
+                                  className="inline-flex bg-black text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
+
+                                >
+                                    Hire
+                                  </Link>
+                                </motion.button>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <button
+                        className="absolute top-4 right-4 bg-red-500 text-white rounded-full p-2"
+                        onClick={togglePopupBlackSmith}
+                      >
+                        <IoMdClose />
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+            <div className="xl:w-1/3 md:w-1/2 p-4">
+              <div className="p-6 rounded-lg">
+                <div className="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
+                  <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718173765/wj0gk8euf70msyfiukk0.png" className="h-20" alt="" />
+                </div>
+                <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">Cable TV operation 
+                </h2>
+                <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+              </div>
+              <div className="flex justify-center">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  onClick={togglePopupCableTV}
+                ><div
+                  className="inline-flex ml-5 bg-black text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
+
+                >
+                    Book Now
+                  </div>
+                </motion.button>
+
+
+                {shouldRender7 && (
+                  <div className="fixed inset-0 flex items-center justify-center z-50">
+                    <div className="absolute inset-0 bg-black opacity-50"></div>
+                    <div className={`popup-content ${isPopupOpen7 ? 'open' : 'close'}`}>
+                      <section className="text-gray-600 body-font overflow-hidden">
+                        <div className="container px-5 py-8 mx-auto">
+                          <div className="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img
+                              alt="ecommerce"
+                              className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                              src="https://res.cloudinary.com/dtyombve3/image/upload/v1718173769/bwjm7rozlnynhbb2ee04.jpg"
+                            />
+                            <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 className="text-sm title-font text-gray-500 tracking-widest">EzyHelp</h2>
+                              <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">Cable TV operation 
+                              </h1>
+                              <div className="flex mb-4">
+                                <span className="flex items-center">
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <span className="text-gray-600 ml-3">4 Reviews</span>
+                                </span>
+                                <span className="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                  </a>
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                                    </svg>
+                                  </a>
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                                    </svg>
+                                  </a>
+                                </span>
+                              </div>
+                              <p className="leading-relaxed">
+                              At EzyHelp, our cable TV operators are dependable and skilled professionals ready to assist with a variety of installation and maintenance tasks. Each operator is carefully selected and trained to meet our high standards of reliability and technical expertise. With EzyHelp, you can be confident that our cable TV operators will provide the quality service and support you need to keep your system running smoothly, on time, and with the utmost professionalism.
+                              </p>
+
+                              <div className="">
+                                <span className="title-font font-medium text-2xl text-gray-900">₹ 99</span>
+                                <motion.button
+                                  whileHover={{ scale: 1.1 }}
+                                  whileTap={{ scale: 0.9 }}
+                                ><Link
+                                  href={'/payment/Payment'}
+                                  className="inline-flex bg-black text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
+
+                                >
+                                    Hire
+                                  </Link>
+                                </motion.button>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <button
+                        className="absolute top-4 right-4 bg-red-500 text-white rounded-full p-2"
+                        onClick={togglePopupCableTV}
+                      >
+                        <IoMdClose />
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+            <div className="xl:w-1/3 md:w-1/2 p-4">
+              <div className="p-6 rounded-lg">
+                <div className="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
+                  <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718173767/jsrvabjdwvacowhev5jj.png" className="h-20" alt="" />
+                </div>
+                <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">Glass ware manufacturing 
+                </h2>
+                <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+              </div>
+              <div className="flex justify-center">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  onClick={togglePopupGlasswaremanufacturing}
+                ><div
+                  className="inline-flex ml-5 bg-black text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
+
+                >
+                    Book Now
+                  </div>
+                </motion.button>
+
+
+                {shouldRender8 && (
+                  <div className="fixed inset-0 flex items-center justify-center z-50">
+                    <div className="absolute inset-0 bg-black opacity-50"></div>
+                    <div className={`popup-content ${isPopupOpen8 ? 'open' : 'close'}`}>
+                      <section className="text-gray-600 body-font overflow-hidden">
+                        <div className="container px-5 py-8 mx-auto">
+                          <div className="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img
+                              alt="ecommerce"
+                              className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                              src="https://res.cloudinary.com/dtyombve3/image/upload/v1718173766/exjwytmdcpwrybouawve.jpg"
+                            />
+                            <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 className="text-sm title-font text-gray-500 tracking-widest">EzyHelp</h2>
+                              <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">Glass ware manufacturing 
+                              </h1>
+                              <div className="flex mb-4">
+                                <span className="flex items-center">
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <span className="text-gray-600 ml-3">4 Reviews</span>
+                                </span>
+                                <span className="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                  </a>
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                                    </svg>
+                                  </a>
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                                    </svg>
+                                  </a>
+                                </span>
+                              </div>
+                              <p className="leading-relaxed">
+                               At EzyHelp, our glassware manufacturers are dependable and skilled professionals ready to assist with a variety of production tasks. Each manufacturer is carefully selected and trained to meet our high standards of reliability and craftsmanship. With EzyHelp, you can be confident that our glassware manufacturers will provide the quality work and precision you need to produce exceptional glass products, on time, and with the utmost professionalism.
+                              </p>
+
+                              <div className="">
+                                <span className="title-font font-medium text-2xl text-gray-900">₹ 99</span>
+                                <motion.button
+                                  whileHover={{ scale: 1.1 }}
+                                  whileTap={{ scale: 0.9 }}
+                                ><Link
+                                  href={'/payment/Payment'}
+                                  className="inline-flex bg-black text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
+
+                                >
+                                    Hire
+                                  </Link>
+                                </motion.button>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <button
+                        className="absolute top-4 right-4 bg-red-500 text-white rounded-full p-2"
+                        onClick={togglePopupGlasswaremanufacturing}
+                      >
+                        <IoMdClose />
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+            <div className="xl:w-1/3 md:w-1/2 p-4">
+              <div className="p-6 rounded-lg">
+                <div className="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
+                  <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718173769/dugpiogw1vduacabhyti.png" className="h-20" alt="" />
+                </div>
+                <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">Auto service&apos;s 
+                </h2>
+                <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+              </div>
+              <div className="flex justify-center">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  onClick={togglePopupAutoservice}
+                ><div
+                  className="inline-flex ml-5 bg-black text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
+
+                >
+                    Book Now
+                  </div>
+                </motion.button>
+
+
+                {shouldRender9 && (
+                  <div className="fixed inset-0 flex items-center justify-center z-50">
+                    <div className="absolute inset-0 bg-black opacity-50"></div>
+                    <div className={`popup-content ${isPopupOpen9 ? 'open' : 'close'}`}>
+                      <section className="text-gray-600 body-font overflow-hidden">
+                        <div className="container px-5 py-8 mx-auto">
+                          <div className="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img
+                              alt="ecommerce"
+                              className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                              src="https://res.cloudinary.com/dtyombve3/image/upload/v1718173768/adnm9r0knsvdaicy9cu0.jpg"
+                            />
+                            <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 className="text-sm title-font text-gray-500 tracking-widest">EzyHelp</h2>
+                              <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">Auto service&apos;s 
+                              </h1>
+                              <div className="flex mb-4">
+                                <span className="flex items-center">
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <span className="text-gray-600 ml-3">4 Reviews</span>
+                                </span>
+                                <span className="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                  </a>
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                                    </svg>
+                                  </a>
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                                    </svg>
+                                  </a>
+                                </span>
+                              </div>
+                              <p className="leading-relaxed">
+                                
+At EzyHelp, our auto service professionals are dependable and skilled technicians ready to assist with a variety of vehicle maintenance and repair tasks. Each technician is carefully selected and trained to meet our high standards of reliability and expertise. With EzyHelp, you can be confident that our auto service team will provide the quality care and technical proficiency you need to keep your vehicle running smoothly, on time, and with the utmost professionalism.
+                              </p>
+
+                              <div className="">
+                                <span className="title-font font-medium text-2xl text-gray-900">₹ 99</span>
+                                <motion.button
+                                  whileHover={{ scale: 1.1 }}
+                                  whileTap={{ scale: 0.9 }}
+                                ><Link
+                                  href={'/payment/Payment'}
+                                  className="inline-flex bg-black text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
+
+                                >
+                                    Hire
+                                  </Link>
+                                </motion.button>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <button
+                        className="absolute top-4 right-4 bg-red-500 text-white rounded-full p-2"
+                        onClick={togglePopupAutoservice}
+                      >
+                        <IoMdClose />
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+            <div className="xl:w-1/3 md:w-1/2 p-4">
+              <div className="p-6 rounded-lg">
+                <div className="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
+                  <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718182225/snmrcqhdtwdotaxeflqg.png" className="h-20" alt="" />
+                </div>
+                <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">House maid </h2>
+                <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+              </div>
+              <div className="flex justify-center">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  onClick={togglePopupHousemaid}
+                ><div
+                  className="inline-flex ml-5 bg-black text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
+
+                >
+                    Book Now
+                  </div>
+                </motion.button>
+
+
+                {shouldRender10 && (
+                  <div className="fixed inset-0 flex items-center justify-center z-50">
+                    <div className="absolute inset-0 bg-black opacity-50"></div>
+                    <div className={`popup-content ${isPopupOpen10 ? 'open' : 'close'}`}>
+                      <section className="text-gray-600 body-font overflow-hidden">
+                        <div className="container px-5 py-8 mx-auto">
+                          <div className="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img
+                              alt="ecommerce"
+                              className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                              src="https://res.cloudinary.com/dtyombve3/image/upload/v1718173765/aoeyjrvknfoc9lo8wewu.jpg"
+                            />
+                            <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 className="text-sm title-font text-gray-500 tracking-widest">EzyHelp</h2>
+                              <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">House maid</h1>
+                              <div className="flex mb-4">
+                                <span className="flex items-center">
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <span className="text-gray-600 ml-3">4 Reviews</span>
+                                </span>
+                                <span className="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                  </a>
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                                    </svg>
+                                  </a>
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                                    </svg>
+                                  </a>
+                                </span>
+                              </div>
+                              <p className="leading-relaxed">
+                              At EzyHelp, our housemaids are dependable and skilled professionals ready to assist with a variety of household tasks. Each housemaid is carefully selected and trained to meet our high standards of reliability and thoroughness. With EzyHelp, you can be confident that our housemaids will provide the quality service and attention to detail you need to keep your home clean and organized, on time, and with the utmost professionalism.
+                              </p>
+
+                              <div className="">
+                                <span className="title-font font-medium text-2xl text-gray-900">₹ 99</span>
+                                <motion.button
+                                  whileHover={{ scale: 1.1 }}
+                                  whileTap={{ scale: 0.9 }}
+                                ><Link
+                                  href={'/payment/Payment'}
+                                  className="inline-flex bg-black text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
+
+                                >
+                                    Hire
+                                  </Link>
+                                </motion.button>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <button
+                        className="absolute top-4 right-4 bg-red-500 text-white rounded-full p-2"
+                        onClick={togglePopupHousemaid}
+                      >
+                        <IoMdClose />
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+            <div className="xl:w-1/3 md:w-1/2 p-4">
+              <div className="p-6 rounded-lg">
+                <div className="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
+                  <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718173768/slr8gj6itnxycyzrxwhl.png" className="h-20" alt="" />
+                </div>
+                <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">Laundry work</h2>
+                <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+              </div>
+              <div className="flex justify-center">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  onClick={togglePopupLaundrywork}
+                ><div
+                  className="inline-flex ml-5 bg-black text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
+
+                >
+                    Book Now
+                  </div>
+                </motion.button>
+
+
+                {shouldRender11 && (
+                  <div className="fixed inset-0 flex items-center justify-center z-50">
+                    <div className="absolute inset-0 bg-black opacity-50"></div>
+                    <div className={`popup-content ${isPopupOpen11 ? 'open' : 'close'}`}>
+                      <section className="text-gray-600 body-font overflow-hidden">
+                        <div className="container px-5 py-8 mx-auto">
+                          <div className="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img
+                              alt="ecommerce"
+                              className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                              src="https://res.cloudinary.com/dtyombve3/image/upload/v1718173766/p8ide7wbglrmpk7twkap.jpg"
+                            />
+                            <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 className="text-sm title-font text-gray-500 tracking-widest">EzyHelp</h2>
+                              <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">Laundry work</h1>
+                              <div className="flex mb-4">
+                                <span className="flex items-center">
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <span className="text-gray-600 ml-3">4 Reviews</span>
+                                </span>
+                                <span className="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                  </a>
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                                    </svg>
+                                  </a>
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                                    </svg>
+                                  </a>
+                                </span>
+                              </div>
+                              <p className="leading-relaxed">
+                              At EzyHelp, our laundry workers are dependable and skilled professionals ready to assist with a variety of laundry tasks. Each worker is carefully selected and trained to meet our high standards of reliability and efficiency. With EzyHelp, you can be confident that our laundry workers will provide the quality service and attention to detail you need to keep your clothes clean and well-maintained, on time, and with the utmost professionalism.
+                              </p>
+
+                              <div className="">
+                                <span className="title-font font-medium text-2xl text-gray-900">₹ 99</span>
+                                <motion.button
+                                  whileHover={{ scale: 1.1 }}
+                                  whileTap={{ scale: 0.9 }}
+                                ><Link
+                                  href={'/payment/Payment'}
+                                  className="inline-flex bg-black text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
+
+                                >
+                                    Hire
+                                  </Link>
+                                </motion.button>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <button
+                        className="absolute top-4 right-4 bg-red-500 text-white rounded-full p-2"
+                        onClick={togglePopupLaundrywork}
+                      >
+                        <IoMdClose />
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+            <div className="xl:w-1/3 md:w-1/2 p-4">
+              <div className="p-6 rounded-lg">
+                <div className="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
+                  <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718174036/yuwg3nco60zlmtod3z5m.png" className="h-20" alt="" />
+                </div>
+                <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">Receptionist</h2>
+                <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+              </div>
+              <div className="flex justify-center">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  onClick={togglePopupReceptionist}
+                ><div
+                  className="inline-flex ml-5 bg-black text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
+
+                >
+                    Book Now
+                  </div>
+                </motion.button>
+
+
+                {shouldRender12 && (
+                  <div className="fixed inset-0 flex items-center justify-center z-50">
+                    <div className="absolute inset-0 bg-black opacity-50"></div>
+                    <div className={`popup-content ${isPopupOpen12 ? 'open' : 'close'}`}>
+                      <section className="text-gray-600 body-font overflow-hidden">
+                        <div className="container px-5 py-8 mx-auto">
+                          <div className="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img
+                              alt="ecommerce"
+                              className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                              src="https://res.cloudinary.com/dtyombve3/image/upload/v1718174052/awid4jzdiypypc6h0l7d.jpg"
+                            />
+                            <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 className="text-sm title-font text-gray-500 tracking-widest">EzyHelp</h2>
+                              <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">Receptionist</h1>
+                              <div className="flex mb-4">
+                                <span className="flex items-center">
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="currentColor"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <svg
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    className="w-4 h-4 "
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                  </svg>
+                                  <span className="text-gray-600 ml-3">4 Reviews</span>
+                                </span>
+                                <span className="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                  </a>
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                                    </svg>
+                                  </a>
+                                  <a className="text-gray-500">
+                                    <svg
+                                      fill="currentColor"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      className="w-5 h-5"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                                    </svg>
+                                  </a>
+                                </span>
+                              </div>
+                              <p className="leading-relaxed">
+                              At EzyHelp, our receptionists are dependable and skilled professionals ready to assist with a variety of administrative and front desk tasks. Each receptionist is carefully selected and trained to meet our high standards of reliability and efficiency. With EzyHelp, you can be confident that our receptionists will provide the quality service and organizational support you need to keep your office running smoothly, on time, and with the utmost professionalism.
+                              </p>
+
+                              <div className="">
+                                <span className="title-font font-medium text-2xl text-gray-900">₹ 99</span>
+                                <motion.button
+                                  whileHover={{ scale: 1.1 }}
+                                  whileTap={{ scale: 0.9 }}
+                                ><Link
+                                  href={'/payment/Payment'}
+                                  className="inline-flex bg-black text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
+
+                                >
+                                    Hire
+                                  </Link>
+                                </motion.button>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <button
+                        className="absolute top-4 right-4 bg-red-500 text-white rounded-full p-2"
+                        onClick={togglePopupReceptionist}
                       >
                         <IoMdClose />
                       </button>

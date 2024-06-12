@@ -152,6 +152,15 @@ const Worker = () => {
                   <option value="Electrician">Electrician</option>
                   <option value="Carpenter">Carpenter</option>
                   <option value="Labour">Labour</option>
+                  <option value="Electrician">4 wheeler mechanic </option>
+                  <option value="Carpenter">2 wheeler mechanic</option>
+                  <option value="Labour">Beautician </option>
+                  <option value="Electrician">Black Smith </option>
+                  <option value="Carpenter">Cable TV operation </option>
+                  <option value="Labour">Glass ware manufacturing </option>
+                  <option value="Electrician">Auto service&apos;s </option>
+                  <option value="Carpenter">House ma&apos;s </option>
+                  <option value="Labour">Laundry work</option>
                 </select>
               </div>
               <div className="relative mb-4">
