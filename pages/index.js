@@ -9,7 +9,8 @@ import { IoMdClose } from "react-icons/io";
 import Gallery from "./gallery/Gallery";
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { useEffect } from "react";
+import { useDispatch, useSelector } from 'react-redux'
+import { setValue, appendValue, clearValue } from '../redux/worker/worker'
 
 
 export default function Home() {
@@ -40,12 +41,23 @@ export default function Home() {
   const [isPopupOpen12, setIsPopupOpen12] = useState(false);
   const [shouldRender12, setShouldRender12] = useState(false);
 
+  const dispatch = useDispatch()
+  const worker = useSelector((state) => state.worker.value)
+  const [inputValue, setInputValue] = useState("")
+
+  const handleSetValue = (work) => {
+    dispatch(setValue(work))
+  }
+
+  const handleAppendValue = () => {
+    dispatch(appendValue(inputValue))
+  }
+
+  const handleClearValue = () => {
+    dispatch(clearValue())
+  }
 
 
-  const { ref: firstSectionRef, inView: firstSectionInView } = useInView({
-    triggerOnce: true,
-    threshold: 0.3,
-  });
   const { ref: secondSectionRef, inView: secondSectionInView } = useInView({
     triggerOnce: true,
     threshold: 0.3,
@@ -258,7 +270,10 @@ export default function Home() {
                   whileTap={{ scale: 0.9 }}
                 >     <div
                   className="inline-flex bg-black text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
-                  onClick={togglePopup}
+                  onClick={() => {
+                    togglePopup();
+                    handleSetValue('Electrician')
+                }}
                 >
                     Book Now
                   </div>

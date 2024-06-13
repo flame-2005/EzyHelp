@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Script from 'next/script';
 import { useRouter } from 'next/router';
+import { useDispatch, useSelector } from 'react-redux'
 
 const Slider = () => {
   const [amount, setAmount] = useState(100);
@@ -184,7 +185,7 @@ const Slider = () => {
           className={`inline-flex bg-black text-white border-0 py-1 px-6 focus:outline-none text-lg rounded-xl border-custom-orange ${!isFormValid() && 'opacity-50 cursor-not-allowed'}`}
           disabled={!isFormValid()}
         >
-          Pay
+          Pay  ₹ 99
         </button>
       </div>
     </form>

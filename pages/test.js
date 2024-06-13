@@ -1,19 +1,37 @@
-import { useSelector, useDispatch } from 'react-redux'
-import { decrement, increment} from '../redux/counter/counterSlice'
+import React, { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { setValue, appendValue, clearValue } from '../redux/worker/worker'
 
-function App() { 
-  const count = useSelector((state) => state.counter.value)
+const WorkerComponent = () => {
   const dispatch = useDispatch()
+  const worker = useSelector((state) => state.worker.value)
+  const [inputValue, setInputValue] = useState("")
+
+  const handleSetValue = () => {
+    dispatch(setValue(inputValue))
+  }
+
+  const handleAppendValue = () => {
+    dispatch(appendValue(inputValue))
+  }
+
+  const handleClearValue = () => {
+    dispatch(clearValue())
+  }
 
   return (
-      <div className='mt-52'>
-        <button onClick={() => dispatch(decrement())}>-</button>
-        Currently count is {count}
-        <button onClick={() => dispatch(increment())}>+</button>
-        <button onClick={() => dispatch(multiply())}>*</button>
-      </div>
-
+    <div className='mt-52'>
+      <h1>Worker Value: {worker}</h1>
+      <input 
+        type="text" 
+        value={inputValue} 
+        onChange={(e) => setInputValue(e.target.value)} 
+      />
+      <button onClick={handleSetValue}>Set Value</button>
+      <button onClick={handleAppendValue}>Append Value</button>
+      <button onClick={handleClearValue}>Clear Value</button>
+    </div>
   )
 }
 
-export default App
+export default WorkerComponent
