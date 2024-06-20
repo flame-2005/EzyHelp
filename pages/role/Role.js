@@ -11,7 +11,7 @@ const Role = () => {
     <div className="flex flex-wrap -mx-4 -mb-10 text-center">
       <Link href={"/login/Login"} className="sm:w-1/2 mb-10 px-4">
         <div href="/login/Login" className="rounded-lg h-64 overflow-hidden">
-          <img alt="content" className="object-cover object-center h-full w-full rounded-full w-full" src="https://res.cloudinary.com/dtyombve3/image/upload/v1718884741/mdj4dnikvwybg30tyhht.webp"/>
+          <img alt="content" className="object-cover object-center h-full w-full rounded-full w-full" src="https://res.cloudinary.com/dtyombve3/image/upload/v1718889030/epkuneteh8zxq15h6veg.png"/>
         </div>
         <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Hire Worker</h2>
        
