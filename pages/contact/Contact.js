@@ -62,7 +62,7 @@ const Contact = () => {
               marginHeight="0"
               marginWidth="0"
               scrolling="no"
-              src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=New%20Delhi&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+              src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=Pentecostal%20Mission%20Church%2C%20Yergera%20Layout%2C%20Zaheerabad%2C%20RAICHUR-584%20101.&ie=UTF8&t=&z=14&iwloc=B&output=embed"
               style={{ filter: 'grayscale(1) contrast(1.2) opacity(0.4)' }}
             ></iframe>
             <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">

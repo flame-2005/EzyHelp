@@ -9,9 +9,9 @@ const Role = () => {
       <section className="text-gray-600 body-font">
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-wrap -mx-4 -mb-10 text-center">
-      <div className="sm:w-1/2 mb-10 px-4">
+      <Link href={"/login/Login"} className="sm:w-1/2 mb-10 px-4">
         <div href="/login/Login" className="rounded-lg h-64 overflow-hidden">
-          <img alt="content" className="object-cover object-center h-full w-full rounded-full" src="https://res.cloudinary.com/dtyombve3/image/upload/v1717670648/xcumbeg4x4mpsngw7zbl.jpg"/>
+          <img alt="content" className="object-cover object-center h-full w-full rounded-full" src="https://res.cloudinary.com/dtyombve3/image/upload/v1718884741/mdj4dnikvwybg30tyhht.webp"/>
         </div>
         <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Hire Worker</h2>
        
@@ -22,8 +22,8 @@ const Role = () => {
                Login
                 </Link>
               </motion.button>
-      </div>
-      <div className="sm:w-1/2 mb-10 px-4">
+      </Link>
+      <Link href={"/login/Login"} className="sm:w-1/2 mb-10 px-4">
         <div className="rounded-lg h-64 overflow-hidden">
           <img alt="content" className="object-cover object-center h-full w-full rounded-full" src="https://res.cloudinary.com/dtyombve3/image/upload/v1717670647/ysrudqrimy5gygsfvvlu.jpg"/>
         </div>
@@ -36,7 +36,7 @@ const Role = () => {
                 </Link>
               </motion.button>
      
-      </div>
+      </Link>
     </div>
   </div>
 </section>
