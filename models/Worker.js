@@ -7,7 +7,7 @@ const WorkerSchema = new mongoose.Schema({
   district: { type: String, required: true },
   state: { type: String, required: true },
   mobileNo: { type: String, required: true },
-  workCategory: { type: String, required: true },
+  workCategory: { type: String, required: true,unique: true },
 });
 
 export default mongoose.models.Worker || mongoose.model('Worker', WorkerSchema);
