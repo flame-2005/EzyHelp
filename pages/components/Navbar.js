@@ -87,7 +87,7 @@ const Navbar = () => {
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-              ><Link href="/contact/Contact" className="mx-5 md:mx-0 text-xl font-bold hover:bg-White rounded-full text-black hover:px-2 transition-all">
+              ><Link href="/contact/Contact" className="mx-5 md:mx-0 md:text-xl font-bold hover:bg-White rounded-full text-black hover:px-2 transition-all">
                   <p className=' rounded-full w-full h-full'
                   >Contact Us</p>
                 </Link>
@@ -120,7 +120,7 @@ const Navbar = () => {
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-              > <Link href="/#faq" className=" mx-5 md:mx-0 text-xl font-bold hover:bg-White rounded-full text-black hover:px-2 transition-all">
+              > <Link href="/#faq" className=" mx-5 md:mx-0 md:text-xl font-bold hover:bg-White rounded-full text-black hover:px-2 transition-all">
                   FAQs
                 </Link>
               </motion.button>
@@ -130,7 +130,7 @@ const Navbar = () => {
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-              > <Link href="/#gallery" className=" mx-5 md:mx-0 text-xl font-bold hover:bg-White rounded-full text-black hover:px-2 transition-all">
+              > <Link href="/#gallery" className=" mx-5 md:mx-0 md:text-xl font-bold hover:bg-White rounded-full text-black hover:px-2 transition-all">
                   Gallery
                 </Link>
               </motion.button>
