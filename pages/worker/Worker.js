@@ -7,7 +7,6 @@ const Worker = () => {
   const [state, setState] = useState('');
   const [mobileNo, setMobileNo] = useState('');
   const [workCategory, setWorkCategory] = useState('');
-  const [email, setEmail] = useState('');
   const [error, setError] = useState(null);
 
   const handleSubmit = async (event) => {
@@ -20,7 +19,6 @@ const Worker = () => {
       state,
       mobileNo,
       workCategory,
-      email,
     };
 
     const JSONdata = JSON.stringify(formData);
@@ -48,7 +46,6 @@ const Worker = () => {
         setState('');
         setMobileNo('');
         setWorkCategory('');
-        setEmail('');
       } else {
         setError(result.error || 'Failed to sign up worker');
       }
@@ -126,7 +123,7 @@ const Worker = () => {
                   className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
-              {/* <div className="relative mb-4">
+              <div className="relative mb-4">
                 <label htmlFor="mobile-no" className="leading-7 text-sm text-gray-600">Mobile No</label>
                 <input
                   type="text"
@@ -137,7 +134,7 @@ const Worker = () => {
                   onChange={(e) => setMobileNo(e.target.value)}
                   className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
-              </div> */}
+              </div>
               <div className="relative mb-4">
                 <label htmlFor="work-category" className="leading-7 text-sm text-gray-600">Work Category</label>
                 <select
@@ -162,18 +159,6 @@ const Worker = () => {
                   <option value="House maid">House maid</option>
                   <option value="Laundry work">Laundry work</option>
                 </select>
-              </div>
-              <div className="relative mb-4">
-                <label htmlFor="email" className="leading-7 text-sm text-gray-600">Mobile No</label>
-                <input
-                
-                  type="text"
-                  id="email"
-                  name="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                />
               </div>
               <button
                 type="submit"

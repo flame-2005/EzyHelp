@@ -10,7 +10,7 @@ export default async function handler(req, res) {
   switch (method) {
     case 'POST':
       try {
-        const { fullName, currentAddress,district,state, mobileNo, workCategory, email } = req.body;
+        const { fullName, currentAddress,district,state, mobileNo, workCategory  } = req.body;
 
         if (!fullName || !currentAddress || !mobileNo || !workCategory || !district || !state) {
           return res.status(400).json({ error: 'All fields are required' });
@@ -23,7 +23,6 @@ export default async function handler(req, res) {
           state,
           mobileNo,
           workCategory,
-          email,
         });
 
         await newWorker.save();
