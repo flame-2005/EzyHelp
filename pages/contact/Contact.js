@@ -100,9 +100,9 @@ const Contact = () => {
                 />
               </div>
               <div className="relative mb-4">
-                <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
+                <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email/Phone No</label>
                 <input
-                  type="email"
+                  type="text"
                   id="email"
                   name="email"
                   value={formData.email}
