@@ -14,7 +14,7 @@ export default async function handler(req, res) {
   if (req.method === 'POST') {
     const { name, email, phone, pincode, address } = req.body;
 
-    if (!name || !email || !phone || !pincode || !address) {
+    if (!name || !phone || !pincode || !address) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
 

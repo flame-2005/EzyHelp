@@ -262,7 +262,7 @@ export default function Home() {
                   <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1717845211/sqklhiitjaxf60xif3db.png" className="h-20" alt="" />
                 </div>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">Electrician</h2>
-                <p className="leading-relaxed text-base text-center">Hostel deliveries, Curated student discounts and coupons</p>
+                <p className="leading-relaxed text-base text-center">Our electrician will quickly fix all your electrical problems!</p>
               </div>
               <div className="flex justify-center">
                 <motion.button
@@ -433,7 +433,7 @@ export default function Home() {
                   <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1717845573/lsaf993kk9p9uhlmkues.png" className="h-20" alt="" />
                 </div>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">Carpenter</h2>
-                <p className="leading-relaxed text-base text-center">All in one app for your campus for - Personalized engagements</p>
+                <p className="leading-relaxed text-base text-center">Our carpenter will quickly fix all your carpentry problems</p>
               </div>
               <div className="flex justify-center">
                 <motion.button
@@ -602,7 +602,7 @@ export default function Home() {
                   <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1717845211/vwcydexjsdmwwchvxsmm.png" className="h-20" alt="" />
                 </div>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">Labour</h2>
-                <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+                <p className="leading-relaxed text-base text-center">Our laborers will quickly fix all your labor needs!</p>
               </div>
               <div className="flex justify-center">
                 <motion.button
@@ -771,7 +771,7 @@ export default function Home() {
                   <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718173767/osnxdnxzqdqqilg6jebn.png" className="h-20" alt="" />
                 </div>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">4 Wheeler mechanic</h2>
-                <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+                <p className="leading-relaxed text-base text-center">Our expert mechanic will swiftly solve all your 4-wheeler issues!</p>
               </div>
               <div className="flex justify-center">
                 <motion.button
@@ -941,7 +941,8 @@ export default function Home() {
                 </div>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">2 wheeler mechanic 
                 </h2>
-                <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+                <p className="leading-relaxed text-base text-center">
+                Our skilled mechanic will swiftly resolve all your 2-wheeler issues!</p>
               </div>
               <div className="flex justify-center">
                 <motion.button
@@ -1111,7 +1112,8 @@ export default function Home() {
                 </div>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">Beautician 
                 </h2>
-                <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+                <p className="leading-relaxed text-base text-center">
+                Our talented beautician will enhance your beauty in no time!</p>
               </div>
               <div className="flex justify-center">
                 <motion.button
@@ -1288,7 +1290,7 @@ At EzyHelp, our beauticians are dependable and skilled professionals ready to as
                   <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718173768/dx7ncui6yjjznkosjp4y.png" className="h-20" alt="" />
                 </div>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">Black Smith</h2>
-                <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+                <p className="leading-relaxed text-base text-center">Our expert blacksmith will craft and repair with precision and speed!</p>
               </div>
               <div className="flex justify-center">
                 <motion.button
@@ -1458,7 +1460,7 @@ At EzyHelp, our beauticians are dependable and skilled professionals ready to as
                 </div>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">Cable TV operation 
                 </h2>
-                <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+                <p className="leading-relaxed text-base text-center">Our skilled technicians will quickly resolve all your cable TV issues!</p>
               </div>
               <div className="flex justify-center">
                 <motion.button
@@ -1629,7 +1631,7 @@ At EzyHelp, our beauticians are dependable and skilled professionals ready to as
                 </div>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">Glass ware manufacturing 
                 </h2>
-                <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+                <p className="leading-relaxed text-base text-center">Our craftsmen will meticulously create your glassware with precision and care!</p>
               </div>
               <div className="flex justify-center">
                 <motion.button
@@ -1800,7 +1802,7 @@ At EzyHelp, our beauticians are dependable and skilled professionals ready to as
                 </div>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">Auto service&apos;s 
                 </h2>
-                <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+                <p className="leading-relaxed text-base text-center">Our auto taxi service will get you to your destination safely and promptly!</p>
               </div>
               <div className="flex justify-center">
                 <motion.button
@@ -1971,7 +1973,8 @@ At EzyHelp, our auto service professionals are dependable and skilled technician
                   <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718182225/snmrcqhdtwdotaxeflqg.png" className="h-20" alt="" />
                 </div>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">House maid </h2>
-                <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+                <p className="leading-relaxed text-base text-center">
+                Our housemaid service will efficiently manage your household needs with care and expertise!</p>
               </div>
               <div className="flex justify-center">
                 <motion.button
@@ -2140,7 +2143,7 @@ At EzyHelp, our auto service professionals are dependable and skilled technician
                   <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718173768/slr8gj6itnxycyzrxwhl.png" className="h-20" alt="" />
                 </div>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">Laundry work</h2>
-                <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+                <p className="leading-relaxed text-base text-center">Our laundry service will swiftly handle all your laundry needs with care and precision!</p>
               </div>
               <div className="flex justify-center">
                 <motion.button
@@ -2309,7 +2312,7 @@ At EzyHelp, our auto service professionals are dependable and skilled technician
                   <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718174036/yuwg3nco60zlmtod3z5m.png" className="h-20" alt="" />
                 </div>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">Receptionist</h2>
-                <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+                <p className="leading-relaxed text-base text-center">Our receptionist will warmly welcome and efficiently assist you with any inquiries or needs!</p>
               </div>
               <div className="flex justify-center">
                 <motion.button

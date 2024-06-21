@@ -18,7 +18,6 @@ const Slider = () => {
   const isFormValid = () => {
     return (
       formData.name !== '' &&
-      formData.email !== '' &&
       formData.phone !== '' &&
       formData.pincode !== '' &&
       formData.address !== ''
@@ -119,12 +118,11 @@ const Slider = () => {
       <div className="p-2 w-full md:w-1/2">
         <div className="relative">
           <label htmlFor="email" className="leading-7 text-sm text-gray-600">
-            Email
+            Email(Optional)
           </label>
           <input
             type="email"
             id="email"
-            required
             name="email"
             value={formData.email}
             onChange={handleInputChange}
