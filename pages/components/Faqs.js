@@ -35,10 +35,10 @@ const FaqSection = () => {
         },
         {
             question: 'How does EzyHelp ensure the reliability of its professionals?',
-            answer: 'We meticulously vet all our professionals through background checks, reference verification, and skill assessments to ensure they meet our high standards of reliability, safety, and expertise',
+            answer: 'We meticulously vet all our professionals through background checks, reference verification, and skill assessments to ensure they meet our high standards of reliability, safety, and expertise.',
         },
         {
-            question: ' How do I book a service through EzyHelp?',
+            question: 'How do I book a service through EzyHelp?',
             answer: 'Booking a service with EzyHelp is easy. Simply visit our website, choose the type of service you need, and provide some details about your project. We will match you with a qualified professional who fits your requirements.',
         },
         {

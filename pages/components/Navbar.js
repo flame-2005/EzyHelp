@@ -54,11 +54,11 @@ const Navbar = () => {
     <section className={`bg-white shadow-md bg-blend-overlay z-40 font-poppins w-full sticky top-0z-20 navbar ${isVisible ? 'visible' : ''}`}>
       <div className=" md:px-6 py-1 bg-transparent mx-auto border-b-2 border-black"
         x-data="{open:false}">
-        <div className="relative bg-transparent  flex  py-2"
+        <div className="relative bg-transparent  flex  py-1"
         >
           <Link href={'/'}>
           
-           <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718014519/bghejb2qjdoo7zievrql.png" alt="" className='h-10 rounded-full' />
+           <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1719151842/q70mozy9xfkoukiywfbp.jpg" alt="" className='h-12 w-12 rounded-full' />
           </Link>
           {/* <Example/> */}
 

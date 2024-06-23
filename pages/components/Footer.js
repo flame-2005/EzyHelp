@@ -5,12 +5,15 @@ const Footer = () => {
   return (
     <footer className=" relative bottom-0 body-font bg-black text-white">
   <div className="container px-5 py-2 mx-auto flex items-center sm:flex-row flex-col">
-    <Link href={'/'} className="flex title-font font-medium items-center md:justify-start justify-center white">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-      </svg>
-      <span className="ml-3 text-xl">EzyHelp</span>
-    </Link>
+  <Link href={'/'} className="flex title-font font-medium items-center md:justify-start justify-center white">
+  <img 
+    src="https://res.cloudinary.com/dtyombve3/image/upload/v1719151842/q70mozy9xfkoukiywfbp.jpg" 
+    alt="EzyHelp Logo" 
+    className="w-10 h-10 rounded-full"
+  />
+  <span className="ml-3 text-xl">EzyHelp</span>
+</Link>
+
     <p className="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 EzyHelp —
       
     </p>
