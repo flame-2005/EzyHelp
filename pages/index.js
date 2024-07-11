@@ -11,6 +11,8 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useDispatch, useSelector } from 'react-redux'
 import { setValue, appendValue, clearValue } from '../redux/worker/worker'
+import React, { useEffect } from 'react';
+import Popup from './components/Popup';
 
 
 export default function Home() {
@@ -56,6 +58,16 @@ export default function Home() {
   const handleClearValue = () => {
     dispatch(clearValue())
   }
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
 
   const { ref: secondSectionRef, inView: secondSectionInView } = useInView({
@@ -202,35 +214,34 @@ export default function Home() {
 
   return (
     <>
-      <div className="py-24 bg-gradient-to-r from-black  to-white text-white">
-        <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center ">
-          {/* <!--Left Col--> */}
-          <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-            <p className="uppercase tracking-loose w-full">What we do?</p>
-            <h1 className="my-4 text-5xl font-bold leading-tight">
-              Transforming Trades, Empowering Home
-            </h1>
-            <p className="leading-normal text-2xl mb-8">
-              Discover EzyHelp, where skilled craftsmanship meets seamless service for your every home improvement need.
-            </p>
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-
-            ><div
-              className="inline-flex bg-gradient-to-r from-black to-white text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange"
-
-            >
-                Explore
-              </div>
-            </motion.button>
-          </div>
-          {/* <!--Right Col--> */}
-          <div className="w-full md:w-3/5 py-6 text-center">
-            <img className="w-full md:w-4/5 z-50" src="https://res.cloudinary.com/dtyombve3/image/upload/v1718883537/jykgqmd5eotkbfhhnk3d.png" />
-          </div>
+       <div className="py-24 bg-gradient-to-r from-black to-white text-white">
+      <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        {/* Left Col */}
+        <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+          <p className="uppercase tracking-loose w-full">What we do?</p>
+          <h1 className="my-4 text-5xl font-bold leading-tight">
+            Transforming Trades, Empowering Home
+          </h1>
+          <p className="leading-normal text-2xl mb-8">
+            Discover EzyHelp, where skilled craftsmanship meets seamless service for your every home improvement need.
+          </p>
+          <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <div className="inline-flex bg-gradient-to-r from-black to-white text-white border-0 py-2 px-6 focus:outline-none text-lg rounded-full border-custom-orange">
+              Explore
+            </div>
+          </motion.button>
+        </div>
+        {/* Right Col */}
+        <div className="w-full md:w-3/5 py-6 text-center">
+          <img
+            className="w-full md:w-4/5 z-50"
+            src="https://res.cloudinary.com/dtyombve3/image/upload/v1718883537/jykgqmd5eotkbfhhnk3d.png"
+            alt="EzyHelp"
+          />
         </div>
       </div>
+      <Popup show={showPopup} onClose={() => setShowPopup(false)} />
+    </div>
       <div className="relative -mt-12 lg:-mt-24 bg-gradient-to-r from-black to-white">
         <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg">
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -2574,7 +2585,19 @@ At EzyHelp, our auto service professionals are dependable and skilled technician
               <p className="inline-block text-4xl ">Us </p>
             </div>
             <div className="mb-10 mt-10 ">
-              <h1 className="font-bold capitalize  ">Welcome to EzyHelp, where we specialize in seamlessly connecting skilled blue-collar workers with customers like you. Our mission is to simplify your search for reliable professionals across various trades, including plumbing, electrical work, carpentry, and more. At EzyHelp, we prioritize safety, reliability, and convenience to ensure a smooth experience for both customers and service providers. We meticulously vet our professionals to guarantee they meet our high standards, emphasizing your safety and peace of mind. Whether you’re tackling a home repair, renovation project, or routine maintenance, EzyHelp is your trusted partner in finding skilled workers committed to delivering exceptional service. Join our community today and experience the difference with EzyHelp—where connecting with dependable professionals has never been easier. </h1>
+              <h1 className="font-bold capitalize  " >Welcome to EzyHelp!</h1>
+
+At EzyHelp, we connect skilled workers with people who need help with jobs like plumbing, electrical work, carpentry, and more. Our goal is to make it easy for you to find reliable professionals.
+
+<h1 className="font-bold capitalize">Why Choose EzyHelp?</h1>
+Safety: We carefully check our workers to make sure they are safe and trustworthy.
+<br />
+ Reliability: Our workers are skilled and committed to doing a great job.
+ <br />
+ Convenience: Whether you need a repair, renovation, or routine maintenance, EzyHelp makes it easy to find the right professional.
+ <br />
+
+Join us today and see how EzyHelp makes finding reliable workers simple and stress-free! 
             </div>
             <div className="grid grid-cols-1 gap-4 lg:gap-8 sm:gap-4">
               <div className="flex flex-col flex-wrap mb-0 overflow-hidden rounded lg:flex-row dark:" href="#">
