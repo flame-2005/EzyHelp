@@ -17,9 +17,9 @@ const Popup = ({ show, onClose }) => {
         <button onClick={handleRedirect} className="mt-4 bg-black text-white px-4 mr-2 py-2 rounded">
           Login
         </button>
-        <button onClick={onClose} className="mt-4 bg-gray-500 text-white px-4 py-2 rounded">
+        {/* <button onClick={onClose} className="mt-4 bg-gray-500 text-white px-4 py-2 rounded">
           Close
-        </button>
+        </button> */}
       </div>
     </div>
   );
