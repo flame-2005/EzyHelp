@@ -22,7 +22,10 @@ const Login = () => {
 
     if (response.ok) {
       const data = await response.json();
+      const { token, name } = data;
+      console.log(data,"hii")
       localStorage.setItem('token', data.token);
+      localStorage.setItem('name', data.name);
       router.push('/');  // Redirect to home page
     } else {
       const data = await response.json();

@@ -216,11 +216,17 @@ export default function Home() {
     }
   };
 
+  const name = typeof window !== 'undefined' ? localStorage.getItem('name') : null;
+
   return (
     <>
        <div className="py-24 bg-gradient-to-r from-black to-white text-white">
+       <h1 className="my-4 text-5xl font-bold text-center">
+            Welcome {name}
+          </h1>
       <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         {/* Left Col */}
+    
         <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
           <p className="uppercase tracking-loose w-full">What we do?</p>
           <h1 className="my-4 text-5xl font-bold leading-tight">

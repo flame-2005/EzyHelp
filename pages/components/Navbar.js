@@ -3,24 +3,21 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { useRef } from "react";
 import { LuUser2 } from "react-icons/lu";
-import { FaOpencart } from "react-icons/fa6";
-import { MdAddCall } from "react-icons/md";
 import { motion } from 'framer-motion';
 import { useSelector, useDispatch } from 'react-redux'
-import { FaQ } from "react-icons/fa6";
-import { SlPicture } from "react-icons/sl";
+
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
+  // const [open, setOpen] = useState(false);
+  // const [searchQuery, setSearchQuery] = useState('');
 
-  const handleSearch = () => {
-    // Handle the search logic here
-    console.log('Search query:', searchQuery);
-  };
-
-  const count = useSelector((state) => state.counter.value)
-  const dispatch = useDispatch()
+  // const handleSearch = () => {
+  //   // Handle the search logic here
+  //   console.log('Search query:', searchQuery);
+  // };
+  // Access name from localStorage
+  const name = typeof window !== 'undefined' ? localStorage.getItem('name') : null;
+  const text = useSelector((state) => state.name.value)
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -89,7 +86,7 @@ const Navbar = () => {
                 whileTap={{ scale: 0.9 }}
               ><Link href="/contact/Contact" className="mx-5 md:mx-0 md:text-xl font-bold hover:bg-White rounded-full text-black hover:px-2 transition-all">
                   <p className=' rounded-full w-full h-full'
-                  >Contact Us</p>
+                  >Contact Us {text}</p>
                 </Link>
               </motion.button>
 

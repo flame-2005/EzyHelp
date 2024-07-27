@@ -9,13 +9,12 @@ const Login = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
     password: '',
   });
 
   const [showSuccessPopup, setShowSuccessPopup] = useState(false); // State for showing success popup
 
-  const { name, email, phone, password } = formData;
+  const { name, email, password } = formData;
 
   const onChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
@@ -53,7 +52,7 @@ const Login = () => {
               <label className="block text-gray-700 text-sm font-bold mb-2">Email/Phone no</label>
               <input
                 className="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none"
-                type="email"
+                type="text"
                 name="email"
                 value={email}
                 onChange={onChange}
@@ -71,7 +70,7 @@ const Login = () => {
                 required
               />
             </div>
-            <div className="mt-4 hidden">
+            {/* <div className="mt-4 hidden">
               <label className="block text-gray-700 text-sm font-bold mb-2">Phone No</label>
               <input
                 className="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none"
@@ -79,9 +78,8 @@ const Login = () => {
                 name="phone"
                 value={phone}
                 onChange={onChange}
-                required
               />
-            </div>
+            </div> */}
             <div className="mt-4">
               <div className="flex justify-between">
                 <label className="block text-gray-700 text-sm font-bold mb-2">Password</label>

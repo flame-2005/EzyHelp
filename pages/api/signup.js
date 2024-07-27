@@ -11,7 +11,7 @@ export default async function handler(req, res) {
 
   switch (method) {
     case 'POST':
-      const { name, email, phone, password } = req.body;
+      const { name, email, password } = req.body;
 
       try {
         // Check if user already exists
@@ -24,7 +24,6 @@ export default async function handler(req, res) {
         user = new User({
           name,
           email,
-          phone,
           password,
         });
 

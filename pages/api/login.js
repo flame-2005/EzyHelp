@@ -2,8 +2,12 @@ import dbConnect from '../../utils/dbConnect';
 import User from '../../models/User';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
+import React from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { setText, clearText } from '../../redux/name/name'
 
 export default async function handler(req, res) {
+  
   await dbConnect();
 
   if (req.method !== 'POST') {
@@ -37,8 +41,8 @@ export default async function handler(req, res) {
 
     jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1h' }, (err, token) => {
       if (err) throw err;
-      console.log('User data:', payload.user); // Log user data
-      res.status(200).json({ token });
+      console.log('User data:', payload.user.name); // Log user data
+      res.status(200).json({ token, name: payload.user.name });
     });
   } catch (error) {
     console.error('Login error:', error.message);
