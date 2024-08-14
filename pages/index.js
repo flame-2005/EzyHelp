@@ -61,17 +61,17 @@ export default function Home() {
 
   const [showPopup, setShowPopup] = useState(false);
 
-  useEffect(() => {
-    const hasSeenPopup = localStorage.getItem('hasSeenPopup');
-    if (!hasSeenPopup) {
-      const timer = setTimeout(() => {
-        setShowPopup(true);
-        localStorage.setItem('hasSeenPopup', 'true');
-      }, 2000);
+  // useEffect(() => {
+  //   const hasSeenPopup = localStorage.getItem('hasSeenPopup');
+  //   if (!hasSeenPopup) {
+  //     const timer = setTimeout(() => {
+  //       setShowPopup(true);
+  //       localStorage.setItem('hasSeenPopup', 'true');
+  //     }, 2000);
       
-      return () => clearTimeout(timer);
-    }
-  }, []);
+  //     return () => clearTimeout(timer);
+  //   }
+  // }, []);
 
 
   const { ref: secondSectionRef, inView: secondSectionInView } = useInView({
