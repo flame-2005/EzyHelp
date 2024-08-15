@@ -1,6 +1,6 @@
-// pages/api/workerSignup.js
+// pages/api/WorkersSignup.js
 import dbConnect from '../../utils/dbConnect';
-import Worker from '../../models/Worker';
+import Workers from '../../models/Workers';
 
 export default async function handler(req, res) {
   const { method } = req;
@@ -10,13 +10,19 @@ export default async function handler(req, res) {
   switch (method) {
     case 'POST':
       try {
-        const { fullName, currentAddress,district,state, mobileNo, workCategory  } = req.body;
+        const { fullName, currentAddress, district, state, mobileNo, workCategory } = req.body;
 
         if (!fullName || !currentAddress || !mobileNo || !workCategory || !district || !state) {
           return res.status(400).json({ error: 'All fields are required' });
         }
 
-        const newWorker = new Worker({
+        // Check if the mobile number already exists
+        const existingWorkers = await Workers.findOne({ mobileNo });
+        if (existingWorkers) {
+          return res.status(400).json({ error: 'Workers with this mobile number already exists' });
+        }
+
+        const newWorkers = new Workers({
           fullName,
           currentAddress,
           district,
@@ -25,9 +31,9 @@ export default async function handler(req, res) {
           workCategory,
         });
 
-        await newWorker.save();
+        await newWorkers.save();
 
-        res.status(201).json({ success: true, data: newWorker });
+        res.status(201).json({ success: true, data: newWorkers });
       } catch (error) {
         res.status(400).json({ success: false, error: error.message });
       }
