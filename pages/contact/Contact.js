@@ -74,6 +74,12 @@ const Contact = () => {
                   Opp. Pentecostal Mission Church, Yergera Layout, Zaheerabad, RAICHUR-584 101.
                 </p>
               </div>
+              <div className="lg:w-1/2 px-6">
+                <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">Refund Policy</h2>
+                <p className="mt-1">
+                If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at the phone number provided on our website.
+                </p>
+              </div>
               <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
                 <a className="text-indigo-500 leading-relaxed">Areebuddin@ezyhelp.in</a>

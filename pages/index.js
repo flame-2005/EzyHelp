@@ -417,6 +417,7 @@ export default function Home() {
                               <p className="leading-relaxed">
                                 At EzyHelp, our electricians are highly skilled professionals dedicated to ensuring the safety and efficiency of your electrical systems. Each electrician is thoroughly vetted and trained to handle a wide range of electrical services, from simple repairs to complex installations. With EzyHelp, you can trust that our electricians will deliver top-notch service, adhere to industry standards, and prioritize your safety and satisfaction. Choose EzyHelp for reliable and expert electrical solutions.
                               </p>
+                              
 
                               <div className="">
                                 <span className="title-font font-medium text-2xl text-gray-900"> ₹ 99</span>
@@ -431,6 +432,12 @@ export default function Home() {
                                     Hire
                                   </Link>
                                 </motion.button>
+                                <div class="p-4 bg-gray-100 border border-gray-300 rounded-md mt-2">
+    <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
+</div>
+
 
                               </div>
                             </div>
@@ -600,6 +607,12 @@ export default function Home() {
                                     Hire
                                   </Link>
                                 </motion.button>
+                                <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
+    <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
+</div>
+
 
                               </div>
                             </div>
@@ -769,6 +782,12 @@ export default function Home() {
                                     Hire
                                   </Link>
                                 </motion.button>
+                                <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
+    <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
+</div>
+
 
                               </div>
                             </div>
@@ -938,6 +957,12 @@ export default function Home() {
                                     Hire
                                   </Link>
                                 </motion.button>
+                                <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
+    <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
+</div>
+
 
                               </div>
                             </div>
@@ -1109,6 +1134,12 @@ export default function Home() {
                                     Hire
                                   </Link>
                                 </motion.button>
+                                <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
+    <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
+</div>
+
 
                               </div>
                             </div>
@@ -1288,6 +1319,12 @@ At EzyHelp, our beauticians are dependable and skilled professionals ready to as
                                     Hire
                                   </Link>
                                 </motion.button>
+                                <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
+    <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
+</div>
+
 
                               </div>
                             </div>
@@ -1457,6 +1494,12 @@ At EzyHelp, our beauticians are dependable and skilled professionals ready to as
                                     Hire
                                   </Link>
                                 </motion.button>
+                                <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
+    <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
+</div>
+
 
                               </div>
                             </div>
@@ -1628,6 +1671,12 @@ At EzyHelp, our beauticians are dependable and skilled professionals ready to as
                                     Hire
                                   </Link>
                                 </motion.button>
+                                <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
+    <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
+</div>
+
 
                               </div>
                             </div>
@@ -1799,6 +1848,12 @@ At EzyHelp, our beauticians are dependable and skilled professionals ready to as
                                     Hire
                                   </Link>
                                 </motion.button>
+                                <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
+    <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
+</div>
+
 
                               </div>
                             </div>
@@ -1971,6 +2026,12 @@ At EzyHelp, our auto service professionals are dependable and skilled technician
                                     Hire
                                   </Link>
                                 </motion.button>
+                                <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
+    <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
+</div>
+
 
                               </div>
                             </div>
@@ -2141,6 +2202,12 @@ At EzyHelp, our auto service professionals are dependable and skilled technician
                                     Hire
                                   </Link>
                                 </motion.button>
+                                <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
+    <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
+</div>
+
 
                               </div>
                             </div>
@@ -2310,6 +2377,12 @@ At EzyHelp, our auto service professionals are dependable and skilled technician
                                     Hire
                                   </Link>
                                 </motion.button>
+                                <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
+    <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
+</div>
+
 
                               </div>
                             </div>
@@ -2479,6 +2552,12 @@ At EzyHelp, our auto service professionals are dependable and skilled technician
                                     Hire
                                   </Link>
                                 </motion.button>
+                                <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
+    <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
+</div>
+
 
                               </div>
                             </div>
