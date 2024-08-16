@@ -222,8 +222,11 @@ export default function Home() {
     <>
        <div className="py-24 bg-gradient-to-r from-black to-white text-white">
        <h1 className="my-4 text-5xl font-bold text-center">
-            Welcome {name}
+            Welcome 
           </h1>
+       {/* <h1 className="my-4 text-5xl font-bold text-center">
+            Welcome {name}
+          </h1> */}
       <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         {/* Left Col */}
     
@@ -434,7 +437,7 @@ export default function Home() {
                                 </motion.button>
                                 <div class="p-4 bg-gray-100 border border-gray-300 rounded-md mt-2">
     <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
-    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 5-7 business days. To initiate a refund, please contact us directly at:</p>
     <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
 </div>
 
@@ -609,7 +612,7 @@ export default function Home() {
                                 </motion.button>
                                 <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
     <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
-    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 5-7 business days. To initiate a refund, please contact us directly at:</p>
     <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
 </div>
 
@@ -784,7 +787,7 @@ export default function Home() {
                                 </motion.button>
                                 <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
     <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
-    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 5-7 business days. To initiate a refund, please contact us directly at:</p>
     <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
 </div>
 
@@ -959,7 +962,7 @@ export default function Home() {
                                 </motion.button>
                                 <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
     <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
-    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 5-7 business days. To initiate a refund, please contact us directly at:</p>
     <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
 </div>
 
@@ -1136,7 +1139,7 @@ export default function Home() {
                                 </motion.button>
                                 <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
     <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
-    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 5-7 business days. To initiate a refund, please contact us directly at:</p>
     <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
 </div>
 
@@ -1321,7 +1324,7 @@ At EzyHelp, our beauticians are dependable and skilled professionals ready to as
                                 </motion.button>
                                 <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
     <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
-    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 5-7 business days. To initiate a refund, please contact us directly at:</p>
     <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
 </div>
 
@@ -1496,7 +1499,7 @@ At EzyHelp, our beauticians are dependable and skilled professionals ready to as
                                 </motion.button>
                                 <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
     <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
-    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 5-7 business days. To initiate a refund, please contact us directly at:</p>
     <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
 </div>
 
@@ -1673,7 +1676,7 @@ At EzyHelp, our beauticians are dependable and skilled professionals ready to as
                                 </motion.button>
                                 <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
     <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
-    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 5-7 business days. To initiate a refund, please contact us directly at:</p>
     <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
 </div>
 
@@ -1850,7 +1853,7 @@ At EzyHelp, our beauticians are dependable and skilled professionals ready to as
                                 </motion.button>
                                 <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
     <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
-    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 5-7 business days. To initiate a refund, please contact us directly at:</p>
     <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
 </div>
 
@@ -2028,7 +2031,7 @@ At EzyHelp, our auto service professionals are dependable and skilled technician
                                 </motion.button>
                                 <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
     <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
-    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 5-7 business days. To initiate a refund, please contact us directly at:</p>
     <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
 </div>
 
@@ -2204,7 +2207,7 @@ At EzyHelp, our auto service professionals are dependable and skilled technician
                                 </motion.button>
                                 <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
     <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
-    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 5-7 business days. To initiate a refund, please contact us directly at:</p>
     <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
 </div>
 
@@ -2379,7 +2382,7 @@ At EzyHelp, our auto service professionals are dependable and skilled technician
                                 </motion.button>
                                 <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
     <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
-    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 5-7 business days. To initiate a refund, please contact us directly at:</p>
     <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
 </div>
 
@@ -2554,7 +2557,7 @@ At EzyHelp, our auto service professionals are dependable and skilled technician
                                 </motion.button>
                                 <div class="p-4 bg-gray-100 border border-gray-300 rounded-md">
     <h3 class="text-lg font-semibold text-gray-800">Refund Policy</h3>
-    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 7-10 business days. To initiate a refund, please contact us directly at:</p>
+    <p class="text-gray-600">If you are unsatisfied with our services, refunds will be processed within 5-7 business days. To initiate a refund, please contact us directly at:</p>
     <p class="mt-2 font-bold text-gray-900">Phone: 96328 79746</p>
 </div>
 

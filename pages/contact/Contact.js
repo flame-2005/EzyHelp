@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const Contact = () => {
@@ -88,6 +89,7 @@ const Contact = () => {
                 <br />
                 <p className="leading-relaxed">+91 93536 42997</p>
               </div>
+      
             </div>
           </div>
           <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
