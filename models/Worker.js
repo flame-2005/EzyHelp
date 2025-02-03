@@ -7,6 +7,7 @@ const WorkerSchema = new mongoose.Schema({
   district: { type: String, required: true },
   state: { type: String, required: true },
   mobileNo: { type: String, required: true },
+  Aadhar: { type: String, required: true },
   workCategory: { type: String, required: true,unique: true },
 });
 

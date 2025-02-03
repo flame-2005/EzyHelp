@@ -6,8 +6,38 @@ const Worker = () => {
   const [district, setDistrict] = useState('');
   const [state, setState] = useState('');
   const [mobileNo, setMobileNo] = useState('');
+  const [Aadhar, setAadhar] = useState('test');
   const [workCategory, setWorkCategory] = useState('');
   const [error, setError] = useState(null);
+  const [imageUploading, setImageUploading] = useState(false);
+
+  const handleImageUpload = async (event) => {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    setImageUploading(true);
+    const formData = new FormData();
+    formData.append('file', file);
+    formData.append('upload_preset', 'EzyHelp'); // Replace with your Cloudinary preset
+
+    try {
+      const response = await fetch('https://api.cloudinary.com/v1_1/dtyombve3/image/upload', {
+        method: 'POST',
+        body: formData,
+      });
+      const data = await response.json();
+      
+      if (data.secure_url) {
+        setAadhar(data.secure_url);
+        console.log('Updated Aadhar URL:', Aadhar);
+      } else {
+        console.error('Upload failed:', data);
+      }
+    } catch (error) {
+      console.error('Error uploading image:', error);
+    }
+    setImageUploading(false);
+  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -18,33 +48,27 @@ const Worker = () => {
       district,
       state,
       mobileNo,
+      Aadhar,
       workCategory,
     };
-
-    const JSONdata = JSON.stringify(formData);
-
-    const endpoint = '/api/workerSignup';
-
-    const options = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSONdata,
-    };
-
+    
     try {
-      const response = await fetch(endpoint, options);
+      const response = await fetch('/api/workerSignup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
       const result = await response.json();
       console.log(result);
 
       if (response.ok) {
-        alert('Worker signed up successfully! our team will get in touch with you very soon');
+        alert('Worker signed up successfully! Our team will get in touch with you soon.');
         setFullName('');
         setCurrentAddress('');
         setDistrict('');
         setState('');
         setMobileNo('');
+        setAadhar('');
         setWorkCategory('');
       } else {
         setError(result.error || 'Failed to sign up worker');
@@ -134,6 +158,12 @@ const Worker = () => {
                   onChange={(e) => setMobileNo(e.target.value)}
                   className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
+              </div>
+              <div className="relative mb-4">
+                <label htmlFor="aadhar" className="leading-7 text-sm text-gray-600">Upload Aadhar Card</label>
+                <input type="file" id="aadhar" accept="image/*" onChange={handleImageUpload} className="w-full" />
+                {imageUploading && <p className="text-sm text-blue-500">Uploading...</p>}
+                {Aadhar && <img src={Aadhar} alt="Aadhar Preview" className="w-full mt-2 rounded-lg" />}
               </div>
               <div className="relative mb-4">
                 <label htmlFor="work-category" className="leading-7 text-sm text-gray-600">Work Category</label>
